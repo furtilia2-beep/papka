@@ -1,16 +1,52 @@
-# This is a sample Python script.
-
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
-
-
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+from pygame import*
+window = display.set_mode((700,500))
+display.set_caption('тест')
+background = transform.scale(image.load('giga.webp'),(700,500))
 
 
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
 
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+
+game = True
+while game:
+    window.blit(background,(0,0))
+
+
+    for e in event.get():
+        if e.type == QUIT:
+            game = False
+
+    display.update()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
